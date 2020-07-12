@@ -1,0 +1,20 @@
+{
+  "name": "p3_collette_dimitri",
+  "version": "1.0.0",
+  "description": "Projet 3, dev front d'un site qui répertorie les menus du nom de Ohmyfood.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass/main.scss:public/css/style.css",
+    "prefix": "postcss public/css/style.css --use autoprefixer -d public/css/prefixed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DimClt/Projet_3.git"
+  },
+  "author": "Dimitri Clt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DimClt/Projet_3/issues"
+  },
+  "homepage": "https://github.com/DimClt/Projet_3#readme"
+}

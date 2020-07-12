@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+}
+
+.header {
+  background-color: #579c87;
+  padding: 4.5rem 0;
+}
+.header__title {
+  color: #fdcb46;
+  text-align: center;
+  font-size: 4.5rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+}
+
+.footer {
+  display: flex;
+  padding: 2.25rem 1.75rem;
+  justify-content: space-between;
+  background-color: #579c87;
+}
+.footer__link {
+  color: #fdcb46;
+  font-family: "Nunito", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/*# sourceMappingURL=style.css.map */

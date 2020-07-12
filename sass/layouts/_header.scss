@@ -1,0 +1,11 @@
+.header{
+    background-color: $color-secondary;
+    padding: 4.5rem 0;
+    &__title{
+        color: $color-fontpri;
+        text-align: center;
+        font-size: 4.5rem;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+    }
+}
