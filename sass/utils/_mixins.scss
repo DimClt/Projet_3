@@ -1,0 +1,11 @@
+@mixin btn {
+    padding: 1rem;
+    border: .1rem solid $color-secondary;
+    border-radius: 15px;
+    color: $color-fontpri;
+    background: $color-secondary;
+    cursor: pointer;
+    &:hover{
+        opacity: .5;
+    }
+}

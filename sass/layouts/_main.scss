@@ -1,0 +1,43 @@
+.main-zero{
+    padding-top: 5rem;
+}
+
+.main-one{
+    background-color: $color-firstmenu;
+    font-family: 'Satisfy', cursive;
+    &__title{
+        text-align: center;
+        font-size: 2rem;
+        font-family: 'Kalam', cursive;
+    }
+}
+
+.main-two{
+    background-color: $color-secondmenu;
+    font-family: 'Damion', cursive;
+    &__title{
+        text-align: center;
+        font-size: 2rem;
+        font-family: 'Tinos', serif;
+    }
+}
+
+.main-three{
+    background-color: $color-thirdmenu;
+    font-family: 'Great Vibes', cursive;
+    &__title{
+        text-align: center;
+        font-size: 2rem;
+        font-family: 'Merienda One', cursive;
+    }
+}
+
+.main-four{
+    background-color: $color-fourthmenu;
+    font-family: 'Kaushan', cursive;
+    &__title{
+        text-align: center;
+        font-size: 2rem;
+        font-family: 'Merienda One', cursive;
+    }
+}

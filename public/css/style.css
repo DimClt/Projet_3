@@ -2,7 +2,20 @@
   margin: 0;
 }
 
+.btn {
+  padding: 1rem;
+  border: 0.1rem solid #579c87;
+  border-radius: 15px;
+  color: #fdcb46;
+  background: #579c87;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.5;
+}
+
 .header {
+  cursor: pointer;
   background-color: #579c87;
   padding: 4.5rem 0;
 }
@@ -29,7 +42,108 @@
 
 .menu {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  font-size: 2rem;
+  padding-top: 4rem;
+  margin-bottom: 4rem;
+}
+.menu:last-child {
+  margin-bottom: 0;
+  padding-bottom: 4rem;
+}
+.menu__plat {
+  grid-column: 2/11;
+}
+
+.menus {
+  padding-top: 4rem;
+  text-align: center;
+}
+.menus__title {
+  font-size: 3.5rem;
+  margin-bottom: 4rem;
+}
+.menus__title--light {
+  font-size: 2.75rem;
+}
+
+.main-zero {
+  padding-top: 5rem;
+}
+
+.main-one {
+  background-color: #fcdfdb;
+  font-family: "Satisfy", cursive;
+}
+.main-one__title {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Kalam", cursive;
+}
+
+.main-two {
+  background-color: #fff5fe;
+  font-family: "Damion", cursive;
+}
+.main-two__title {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Tinos", serif;
+}
+
+.main-three {
+  background-color: #edefef;
+  font-family: "Great Vibes", cursive;
+}
+.main-three__title {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Merienda One", cursive;
+}
+
+.main-four {
+  background-color: #fdfffd;
+  font-family: "Kaushan", cursive;
+}
+.main-four__title {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Merienda One", cursive;
+}
+
+.menu-prev {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-around;
+}
+.menu-prev__flex {
+  width: 45%;
+}
+.menu-prev__prev {
+  cursor: pointer;
+  text-align: center;
+  padding: 12rem 0;
+  margin-bottom: 5rem;
+  height: 400px;
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+.menu-prev__prev:hover {
+  transform: scale(1.15);
+}
+.menu-prev__name {
+  margin-bottom: 5rem;
+  font-size: 3rem;
+}
+.menu-prev__name--big {
+  font-size: 4rem;
+}
+
+.btn {
+  font-size: 2.25rem;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
