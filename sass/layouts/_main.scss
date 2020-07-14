@@ -1,43 +1,91 @@
 .main-zero{
-    padding-top: 5rem;
+    padding: 5rem 0;
 }
 
 .main-one{
     background-color: $color-firstmenu;
     font-family: 'Satisfy', cursive;
+    padding-bottom: 5rem;
     &__title{
-        text-align: center;
-        font-size: 2rem;
-        font-family: 'Kalam', cursive;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+        &--text{
+            font-size: 2rem;
+            font-family: 'Kalam', cursive;
+        }
+        &--border{
+            height: 10px;
+            width: 30%;
+            background-color: #000;
+        }
     }
 }
 
 .main-two{
     background-color: $color-secondmenu;
     font-family: 'Damion', cursive;
+    padding-bottom: 5rem;
     &__title{
-        text-align: center;
-        font-size: 2rem;
-        font-family: 'Tinos', serif;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+        &--text{
+            font-size: 2rem;
+            font-family: 'Tinos', serif;
+        }
+        &--border{
+            height: 10px;
+            width: 30%;
+            background-color: #000;
+        }
     }
 }
 
 .main-three{
     background-color: $color-thirdmenu;
     font-family: 'Great Vibes', cursive;
+    padding-bottom: 5rem;
     &__title{
-        text-align: center;
-        font-size: 2rem;
-        font-family: 'Merienda One', cursive;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+        &--text{
+            font-size: 2rem;
+            font-family: 'Merienda One', cursive;
+        }
+        &--border{
+            height: 10px;
+            width: 30%;
+            background-color: #000;
+        }
     }
 }
 
 .main-four{
     background-color: $color-fourthmenu;
     font-family: 'Kaushan', cursive;
+    padding-bottom: 5rem;
     &__title{
-        text-align: center;
-        font-size: 2rem;
-        font-family: 'Merienda One', cursive;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+        &--text{
+            font-size: 2rem;
+            font-family: 'Merienda One', cursive;
+        }
+        &--border{
+            height: 10px;
+            width: 30%;
+            background-color: #000;
+        }
     }
 }
