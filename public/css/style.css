@@ -2,7 +2,12 @@
   margin: 0;
 }
 
-.btn {
+.btn-zone {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+}
+.btn-zone__btn {
   padding: 1rem;
   border: 0.1rem solid #579c87;
   border-radius: 15px;
@@ -28,19 +33,28 @@
 }
 
 .footer {
+  position: fixed;
+  bottom: 0;
+  width: 97%;
+  margin: auto;
   display: flex;
-  padding: 2.25rem 1.75rem;
+  padding: 0.25rem 1.75rem;
   justify-content: space-between;
   background-color: #579c87;
 }
 .footer__link {
-  color: #fdcb46;
-  font-family: "Nunito", sans-serif;
   font-size: 2.25rem;
   font-weight: 400;
 }
+.footer__link--style {
+  color: #fdcb46;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+}
 
 .menu {
+  margin: auto;
+  width: 96%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   font-size: 2rem;
@@ -54,8 +68,13 @@
 .menu__plat {
   grid-column: 2/11;
 }
+.menu__prix {
+  text-align: end;
+}
 
 .menus {
+  display: flex;
+  justify-content: center;
   padding-top: 4rem;
   text-align: center;
 }
@@ -68,47 +87,95 @@
 }
 
 .main-zero {
-  padding-top: 5rem;
+  padding: 5rem 0;
 }
 
 .main-one {
   background-color: #fcdfdb;
   font-family: "Satisfy", cursive;
+  padding-bottom: 5rem;
 }
 .main-one__title {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+.main-one__title--text {
   font-size: 2rem;
   font-family: "Kalam", cursive;
+}
+.main-one__title--border {
+  height: 10px;
+  width: 30%;
+  background-color: #000;
 }
 
 .main-two {
   background-color: #fff5fe;
   font-family: "Damion", cursive;
+  padding-bottom: 5rem;
 }
 .main-two__title {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+.main-two__title--text {
   font-size: 2rem;
   font-family: "Tinos", serif;
+}
+.main-two__title--border {
+  height: 10px;
+  width: 30%;
+  background-color: #000;
 }
 
 .main-three {
   background-color: #edefef;
   font-family: "Great Vibes", cursive;
+  padding-bottom: 5rem;
 }
 .main-three__title {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+.main-three__title--text {
   font-size: 2rem;
   font-family: "Merienda One", cursive;
+}
+.main-three__title--border {
+  height: 10px;
+  width: 30%;
+  background-color: #000;
 }
 
 .main-four {
   background-color: #fdfffd;
   font-family: "Kaushan", cursive;
+  padding-bottom: 5rem;
 }
 .main-four__title {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+.main-four__title--text {
   font-size: 2rem;
   font-family: "Merienda One", cursive;
+}
+.main-four__title--border {
+  height: 10px;
+  width: 30%;
+  background-color: #000;
 }
 
 .menu-prev {
@@ -127,10 +194,11 @@
   margin-bottom: 5rem;
   height: 400px;
   transform: scale(1);
-  transition: transform 0.5s;
+  transition: transform 0.5s, box-shadow 0.5s 0.3s;
 }
 .menu-prev__prev:hover {
   transform: scale(1.15);
+  box-shadow: 0 0 2rem #9E9E9E;
 }
 .menu-prev__name {
   margin-bottom: 5rem;
@@ -138,12 +206,6 @@
 }
 .menu-prev__name--big {
   font-size: 4rem;
-}
-
-.btn {
-  font-size: 2.25rem;
-  font-family: "Nunito", sans-serif;
-  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

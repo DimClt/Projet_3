@@ -1,4 +1,6 @@
 .menu{
+    margin: auto;
+    width: 96%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     font-size: 2rem;
@@ -11,9 +13,14 @@
     &__plat{
         grid-column: 2 / 11;
     }
+    &__prix{
+        text-align: end;
+    }
 }
 
 .menus{
+    display: flex;
+    justify-content: center;
     padding-top: 4rem;
     text-align: center;
     &__title{

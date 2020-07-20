@@ -1,3 +1,8 @@
-.btn {
-    @include btn
+.btn-zone{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    &__btn{
+        @include btn;
+    }
 }
