@@ -1,29 +1,64 @@
 .menu{
     margin: auto;
-    width: 96%;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    width: 90%;
     font-size: 2rem;
     padding-top: 4rem;
     margin-bottom: 4rem;
+    line-height: 3.5rem;
     &:last-child{
         margin-bottom: 0;
         padding-bottom: 4rem;
     }
-    &__plat{
-        grid-column: 2 / 11;
+    &__two{
+        &--color-fi{
+            color: $colormenu-twosec;
+        }
+        &--color-se{
+            color: $colormenu-twothi;
+        }
+        &--color-th{
+            color: $colormenu-twofou;
+        }
     }
     &__prix{
+        width: 25%;
         text-align: end;
+        vertical-align: bottom;
     }
 }
 
 .menus{
-    display: flex;
+    // display: flex;
     justify-content: center;
     padding-top: 4rem;
     margin-bottom: 4rem;
     text-align: center;
+    &--icon{
+        @include gradient($colormenu-oneicon);
+        font-size: 5rem;
+    }
+    &--iconlight{
+        @include gradient($colormenu-oneicon);
+        font-size: 3rem;
+    }
+    &--one{
+        @include font-name(one);
+    }
+    &--two{
+        @include font-name(two);
+        @include gradient($colormenu-twopri);
+        padding-top: 3rem;
+    }
+    &--three{
+        @include font-name(three);
+        @include gradient($colormenu-threepri);
+        padding-top: 3rem;
+    }
+    &--four{
+        @include font-name(four);
+        @include gradient($colormenu-fourpri);
+        padding-top: 3rem;
+    }
     &__title{
         font-size: 3.5rem;
         margin-left: 1rem;

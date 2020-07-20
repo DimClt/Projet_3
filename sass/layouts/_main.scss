@@ -1,91 +1,67 @@
 .main-zero{
-    padding: 5rem 0;
+    padding-top: 6rem;
 }
 
-.main-one{
-    background-color: $color-firstmenu;
-    font-family: 'Satisfy', cursive;
+.main{
     padding-bottom: 5rem;
+    &__one{
+        @include font-menu(one);
+    }
+    &__two{
+        @include font-menu(two);
+    }
+    &__three{
+        @include font-menu(three);
+    }
+    &__four{
+        @include font-menu(four);
+    }
     &__title{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 80%;
+        width: 90%;
         margin: auto;
+        &:hover{
+            & .slide-bare{
+                & > .slide-bare__progress{
+                    transform: scaleX(1);
+                }
+            }
+        }
         &--text{
-            font-size: 2rem;
-            font-family: 'Kalam', cursive;
+            text-align: center;
+            font-size: 2.5rem;
         }
         &--border{
             height: 10px;
             width: 30%;
-            background-color: #000;
+            border-radius: 10px;
         }
     }
-}
-
-.main-two{
-    background-color: $color-secondmenu;
-    font-family: 'Damion', cursive;
-    padding-bottom: 5rem;
-    &__title{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 80%;
-        margin: auto;
-        &--text{
-            font-size: 2rem;
-            font-family: 'Tinos', serif;
-        }
-        &--border{
-            height: 10px;
-            width: 30%;
+    &__border{
+        &--one{
             background-color: #000;
         }
-    }
-}
+        &--twofirst{
+            background-color: $colormenu-twosec;
+        }
+        &--twosec{
+            background-color: #f82376;
 
-.main-three{
-    background-color: $color-thirdmenu;
-    font-family: 'Great Vibes', cursive;
-    padding-bottom: 5rem;
-    &__title{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 80%;
-        margin: auto;
-        &--text{
-            font-size: 2rem;
-            font-family: 'Merienda One', cursive;
         }
-        &--border{
-            height: 10px;
-            width: 30%;
-            background-color: #000;
-        }
-    }
-}
+        &--twothird{
+            background-color: $colormenu-twothi;
 
-.main-four{
-    background-color: $color-fourthmenu;
-    font-family: 'Kaushan', cursive;
-    padding-bottom: 5rem;
-    &__title{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 80%;
-        margin: auto;
-        &--text{
-            font-size: 2rem;
-            font-family: 'Merienda One', cursive;
         }
-        &--border{
-            height: 10px;
-            width: 30%;
-            background-color: #000;
+        &--three{
+            background-color: $colormenu-threesec;
+        }
+        &--fourleft{
+            @include gradientback($colormenu-fourpri);
+        }
+        &--fourright{
+            @include gradientback($colormenu-fourthi);
         }
     }
 }

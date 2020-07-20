@@ -11,3 +11,57 @@
         opacity: .5;
     }
 }
+
+@mixin font-switch($number, $type, $color) {
+    $page: map-get($map: $pages-styles, $key: $number);
+    color: $color;
+    @if $type == 'menu' {
+        font-family: map-get($map: $page, $key: font-menu);    
+    }
+    @if $type == 'name' {
+        font-family: map-get($map: $page, $key: font-name);
+    }
+}
+
+
+@mixin font-name($number) {
+    $pages: map-get($map: $pages-styles, $key: $number);
+    font-family: map-get($map: $pages, $key: font-name);
+    color: map-get($map: $pages, $key: colo-font);
+}
+
+
+@mixin gradient($color){
+    background-image: $color;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin gradientback($color) {
+    background-image: $color;
+    
+}
+
+@mixin font-menu($number) {
+    $pages: map-get($map: $pages-styles, $key: $number);
+    background-color: map-get($map: $pages, $key: bg);
+    font-family: map-get($map: $pages, $key: font-menu);
+}
+
+@keyframes wiggle-one {
+    0% {transform: rotate(10deg);}
+    25% {transform: rotate(-10deg);}
+    50% {transform: rotate(20deg);}
+    75% {transform: rotate(-5deg);}
+    100% {transform: rotate(0deg);}
+  }
+
+@keyframes wiggle-two{
+    0% {transform: translatex(10px);}
+    40% {transform: translatex(5px);}
+    80% {transform: translatex(20px);}
+    100% {transform: translatex(0px);}
+}
+
+// Responcive :
+//  Index : (600~700px)  et (400~450px) (voir pour le header a qui réduit vers 380px)

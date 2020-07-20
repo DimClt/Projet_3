@@ -1,19 +1,33 @@
 .footer{
+    width: 100%;
     position: fixed;
     bottom: 0;
-    width: 97%;
-    margin: auto;
-    display: flex;
-    padding: 0.25rem 1.75rem;
-    justify-content: space-between;
-    background-color: $color-secondary;
+    background-color: $color-secondary;  
     &__link{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1.5rem;
         font-size: 2.25rem;
         font-weight: 400;
         &--style{
             color: $color-fontpri;
             text-decoration: none;
             font-family: 'Nunito', sans-serif;
+            &:hover{
+                animation-name: wiggle-one;
+                animation-duration: 1s;
+                animation-iteration-count: 1;
+                animation-timing-function: ease-in-out;
+            }
+            
+        }
+        &--right{
+            &:hover{
+                animation-name: wiggle-two;
+                animation-duration: 1s;
+                animation-iteration-count: 2;
+                animation-timing-function: cubic-bezier(0,.49,.68,.99);
+            }
         }
     }
 }

@@ -3,29 +3,112 @@
     width: 90%;
     margin: auto;
     justify-content: space-around;
+    @media screen and (max-width: 749px){
+        width: 95%;
+    }
+    @media screen and (max-width: 449px){
+        display: inline;
+    }
+    
     &__flex{
-        width: 45%;
+        width: 35%;
+        @media screen and (max-width: 449px) {
+            width: 90%;
+            margin: auto;
+        }
+        &--medium{
+            @media screen and (max-width: 749px) {
+                width: 40%;
+            }
+        }
+        
     }
     &__prev{
         cursor: pointer;
+        box-shadow: 0 0 1rem #9E9E9E;
         text-align: center;
-        padding: 12rem 0;
-        margin-bottom: 5rem;
-        height: 400px;
-        transform: scale(1);
-        transition: transform .5s, box-shadow .5s .3s;
-        &:hover{
-            transform: scale(1.15);
-            box-shadow: 0 0 2rem #9E9E9E;
+        margin-bottom: 7rem;
+        height: 500px;
+        @media only screen and (max-witdh: 749px) {
+            padding: 0 1rem 5rem 1rem;
         }
     }
-        
     &__name{
         margin-bottom: 5rem;
-        font-size: 3rem;
+        font-size: 2.5rem;
+        @media screen and (max-width: 749px){
+            font-size: 2.25rem;
+        }
+        &--icon{
+            @include gradient($colormenu-oneicon);
+            font-size: 5rem;
+            @media screen and (max-width: 749px) {
+                font-size: 4.5rem;
+            }
+        }
+        &--one{
+            @include font-switch(one, name, black);
+        }
+        &--two{
+            @include font-switch(two, name, black);
+            @include gradient($colormenu-twopri);
+            padding-top: 3rem;
+        }
+        &--three{
+            @include font-switch(three, name, black);
+            @include gradient($colormenu-threepri);
+            padding-top: 3rem;
+        }
+        &--four{
+            @include font-switch(four, name, black);
+            @include gradient($colormenu-fourpri);
+            padding-top: 3rem;
+        }
         &--big{
             font-size: 4rem;
+            @media screen and (max-width: 749px){
+                font-size: 3.75rem;
+            }
+        }
+    }
+    &__menu{
+        &--one{
+            @include font-switch(one, menu, black);
+        }
+        &--two{
+            @include font-switch(two, menu,  $colormenu-twosec);
+        }
+        &--three{
+            @include font-switch(three, menu,  $colormenu-threesec);
+        }
+        &--four{
+            @include font-switch(four, menu,  black);
+            @include gradient($colormenu-fourpri);
+        }
+    }
+    &__scaling{
+        padding-top: 6rem;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        transform: scale(1);
+        transition: transform .3s;
+        &:hover{
+            transform: scale(1.25);
+            &::after{
+                opacity: 1;
+            }
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            background-color: inherit;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity .3s;
         }
     }
 }
-

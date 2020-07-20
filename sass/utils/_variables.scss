@@ -1,4 +1,4 @@
-// Color (order : index/mentions/contact, menu 1 2 3 4
+// Color Header / Footer /Index
 
 $color-primary: #fff;
 $color-secondary: #579c87;
@@ -6,7 +6,62 @@ $color-fontpri: #fdcb46;
 
 $color-boxshadow: #F1F1F1;
 
-$color-firstmenu: #fcdfdb;
-$color-secondmenu: #fff5fe;
-$color-thirdmenu: #edefef;
-$color-fourthmenu: #fdfffd;
+//  Color menu
+// ALL
+$colorfont-default: #000;
+// menu 1
+$colormenu-oneback: #fcdfdb;
+$colormenu-oneicon: linear-gradient(to right, #f15f62, #f36c62, #f47963, #f58566, #f6916a);
+// menu 2
+$colormenu-twoback: #fff5fe;
+$colormenu-twopri: linear-gradient(to right, #c77412, #ea503d, #f82376, #e32aba, #905bfd);
+$colormenu-twosec: #c77412;
+$colormenu-twothi: #a56799;
+$colormenu-twofou: #6e4ccc;
+//  menu 3
+$colormenu-threeback: #edefef;
+$colormenu-threepri: linear-gradient(to right, #022edf, #005ef0, #0083f7,#56a5f7, #92c4f3);
+$colormenu-threesec: #0228dd;
+$colormenu-threethi: #0670f3;
+$colormenu-threefou: #229df9;
+//  menu 4
+$colormenu-fourback:#fdfffd;
+$colormenu-fourpri: linear-gradient(to right, #50a244, #6bb952, #86d061, #a2e770, #beff7f);
+$colormenu-fourthi: linear-gradient(to right, #beff7f, #a2e770, #86d061, #6bb952, #50a244);
+
+//  Map Color/Font/bg des menus
+
+$pages-styles: (
+    one: (
+        bg: $colormenu-oneback,
+        font-menu: 'Kalam',
+        font-name: 'Satisfy',
+        colo-font: $colorfont-default,
+        colo-ico: $colormenu-oneicon,
+    ),
+    two: (
+        bg: $colormenu-twoback,
+        font-menu: 'Tinos',
+        font-name: 'Damion',
+        colo-font-pri: $colormenu-twosec,
+        colo-font-sec: $colormenu-twothi,
+        colo-font-thi: $colormenu-twofou,
+    ),
+    three: (
+        bg: $colormenu-threeback,
+        font-menu: 'Merienda One',
+        font-name: 'Great Vides',
+        colo-font: $colorfont-default,
+        colo-font-pri: $colormenu-threesec,
+        colo-font-sec: $colormenu-threethi,
+        color-font-thi: $colormenu-threefou,
+    ),
+    four: (
+        bg: $colormenu-fourback,
+        font-menu: 'Merienda One',
+        font-name: 'Kaushan Script',
+        colo-font: $colorfont-default,
+        colo-grad-left: $colormenu-fourpri,
+        colo-grad-right: $colormenu-fourthi,
+    ),
+);
