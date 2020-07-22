@@ -4,7 +4,7 @@
   "description": "Projet 3, dev front d'un site qui répertorie les menus du nom de Ohmyfood.",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch sass/main.scss:public/css/style.css",
+    "sass": "sass --watch sass/main.scss:public/css/style.css -w --style compressed",
     "prefix": "postcss public/css/style.css --use autoprefixer -d public/css/prefixed"
   },
   "repository": {
