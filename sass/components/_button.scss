@@ -7,3 +7,9 @@
         @include btn;
     }
 }
+
+.loading:after {
+    content: ' . ';
+    margin-right: 16px;
+    animation: dots 1.75s steps(5, end) infinite;
+}

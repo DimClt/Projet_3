@@ -37,31 +37,42 @@
             height: 10px;
             width: 30%;
             border-radius: 10px;
+            @media screen and (max-width: 950px){
+                width: 15%;
+            }
+            @media screen and(max-width: 550px){
+                width: 5%;
+            }
         }
     }
     &__border{
         &--one{
             background-color: #000;
+            @include responcive(950px, 550px);
         }
         &--twofirst{
             background-color: $colormenu-twosec;
+            @include responcive(1200px, 750px);
         }
         &--twosec{
-            background-color: #f82376;
-
+            background-color: $colormenu-twothi;
+            @include responcive(1200px, 750px);
         }
         &--twothird{
-            background-color: $colormenu-twothi;
-
+            background-color: $colormenu-twofou;
+            @include responcive(1200px, 750px);
         }
         &--three{
             background-color: $colormenu-threesec;
+            @include responcive(1200px, 750px);
         }
         &--fourleft{
             @include gradientback($colormenu-fourpri);
+            @include responcive(1100px, 650px);
         }
         &--fourright{
             @include gradientback($colormenu-fourthi);
+            @include responcive(1100px, 650px);
         }
     }
 }
