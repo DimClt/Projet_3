@@ -1,9 +1,9 @@
 .menu{
     margin: auto;
     width: 90%;
-    font-size: 2rem;
     padding-top: 4rem;
     margin-bottom: 4rem;
+    font-size: 2rem;
     line-height: 4rem;
     &:last-child{
         margin-bottom: 0;
@@ -37,8 +37,8 @@
         font-size: 5rem;
     }
     &--iconlight{
-        @include gradient($colormenu-oneicon);
         font-size: 3rem;
+        @include gradient($colormenu-oneicon);
     }
     &--one{
         @include font-name(one);
@@ -59,8 +59,8 @@
         padding-top: 3rem;
     }
     &__title{
-        font-size: 3.5rem;
         margin-bottom: 4rem;
+        font-size: 3.5rem;
         &--light{
             font-size: 2.75rem;
         }

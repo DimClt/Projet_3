@@ -19,7 +19,11 @@
                 animation-iteration-count: 1;
                 animation-timing-function: ease-in-out;
             }
-            
         }
+        &--right{
+            &:hover{
+                animation: wiggle-two .1s  ease-in-out 6 alternate;
+            }
+        } 
     }
 }

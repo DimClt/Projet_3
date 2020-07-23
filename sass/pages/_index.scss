@@ -1,5 +1,4 @@
 .menu-prev{
-    
     display: flex;
     width: 90%;
     margin: auto;
@@ -36,11 +35,8 @@
             font-size: 2.25rem;
         }
         &--icon{
+            font-size: 4.5rem;
             @include gradient($colormenu-oneicon);
-            font-size: 5rem;
-            @media screen and (max-width: 749px) {
-                font-size: 4.5rem;
-            }
         }
         &--one{
             @include font-switch(one, name, black);
