@@ -7,23 +7,19 @@
         display: flex;
         justify-content: space-between;
         padding: 0 1.5rem;
-        font-size: 2.25rem;
+        font-size: 2rem;
         font-weight: 400;
+        @media screen and (max-width: 449px) {
+            font-size: 1.25rem;
+            padding: 0 .5rem;
+        }
         &--style{
             color: $color-fontpri;
             text-decoration: none;
             font-family: 'Nunito', sans-serif;
             &:hover{
-                animation-name: wiggle-one;
-                animation-duration: 1s;
-                animation-iteration-count: 1;
-                animation-timing-function: ease-in-out;
+                animation: wiggle-two .1s  ease-in-out infinite alternate;
             }
         }
-        &--right{
-            &:hover{
-                animation: wiggle-two .1s  ease-in-out 6 alternate;
-            }
-        } 
     }
 }

@@ -1,9 +1,11 @@
-.main-zero{
-    padding-top: 6rem;
-}
+// .main-zero{
+//     padding-top: 6rem;
+// }
 
 .main{
     padding-bottom: 5rem;
+    width: 90%;
+    margin: auto;
     &__one{
         @include font-menu(one);
     }
@@ -20,7 +22,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 90%;
+        width: 98%;
         margin: auto;
         &:hover{
             & .slide-bare{
