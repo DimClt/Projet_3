@@ -23,14 +23,14 @@
         box-shadow: 0 0 1rem #9E9E9E;
         text-align: center;
         margin-bottom: 4rem;
-        height: 760px;
+        height: 700px;
         @media screen and (max-width: 749px) {
             padding: 0 1rem 5rem 1rem;
-            height: 625px;
+            height: 500px;
 
         }
         @media only screen and (max-width: 449px) {
-            height: 500px;
+            height: 400px;
         }
     }
     &__name{
